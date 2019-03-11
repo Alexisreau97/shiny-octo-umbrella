@@ -1,3 +1,7 @@
+# Useless assignment to variable - article.
+Lint/UselessAssignment:
+  Enabled: false
+
 # Line is too long.
 Metrics/LineLength:
   Max: 120
