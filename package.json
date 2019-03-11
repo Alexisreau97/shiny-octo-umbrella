@@ -1,0 +1,14 @@
+{
+  "name": "shiny-octo-umbrella",
+  "private": true,
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "rubocop && bundle exec annotate",
+      "pre-push": "rspec"
+    }
+  },
+  "devDependencies": {
+    "husky": "^1.3.1"
+  }
+}

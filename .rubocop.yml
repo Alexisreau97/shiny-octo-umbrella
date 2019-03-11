@@ -1,0 +1,11 @@
+# Line is too long.
+Metrics/LineLength:
+  Max: 120
+
+# Missing top-level class documentation comment.
+Documentation:
+  Enabled: false
+
+# include is used at the top level. Use inside class or module.
+Style/MixinUsage:
+  Enabled: false
