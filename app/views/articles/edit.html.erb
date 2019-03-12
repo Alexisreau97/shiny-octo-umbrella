@@ -1,7 +1,7 @@
-<h1>Articles#edit</h1>
+<h1>Modifier l'article</h1><br>
 
 <%= form_for @article do |f| %>
-  <%= f.text_field :title, placeholder: 'title' %><br>
-  <%= f.text_area :content, placeholder: 'content' %><br><br>
-  <%= f.submit %>
+  <%= f.text_field :title, placeholder: 'Titre', class: "form-control" %><br>
+  <%= f.text_area :content, placeholder: 'Contenu', class: "form-control" %><br><br>
+  <button type="submit" class="btn btn-primary">Modifier</button>
 <% end %>

@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+@media (min-width: 992px) {
+	.show {
+		margin-left: 13em;
+		margin-right: 13em;
+	}
+}
+
+.title {
+	text-align: center;
+	font-family: "Times New Roman";
+	margin-bottom: 12px;
+}
+
+.date {
+	font-size: 13px;
+	color: #757575;
+	margin-bottom: 40px;
+}
+
+.text-content {
+	font-family: "Times New Roman";
+	font-size: 21px;
+	line-height: 1.58;
+	color: #212121;
+}
+
+.navbar {
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+}
+
+.navbar-brand {
+	font-size: 26px !important;
+}
