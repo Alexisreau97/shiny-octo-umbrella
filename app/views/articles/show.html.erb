@@ -1,5 +1,6 @@
 <div class="show">
 	<h1 class="title"><%= @article.title %></h1>
+	<%= @article.category.name %>
 
 	<p class="date"><%= @article.created_at.strftime("%d-%m-%Y") %></p>
 	<div class="text-content"><%= simple_format(@article.content) %></div>
