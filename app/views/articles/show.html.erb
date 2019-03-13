@@ -5,7 +5,9 @@
 	<div class="text-content"><%= simple_format(@article.content) %></div>
 
 	<br>
-	<%= link_to 'Modifier', edit_article_path, class: "btn btn-primary" %>
-	<%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-	<br><br>
+	<% if admin_signed_in? %>
+		<%= link_to 'Modifier', edit_article_path, class: "btn btn-primary" %>
+		<%= link_to 'Supprimer', @article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+		<br><br>
+	<% end %>
 </div>
