@@ -7,16 +7,22 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-      <ul class="my-2 my-lg-0">
-        <%= link_to 'Nouvel article', new_article_path, class: "btn btn-primary" %>
-      </ul>
+        <% if admin_signed_in? %>
+          <li class="nav-item">
+            <%= link_to 'Se déconnecter', destroy_admin_session_path, method: :delete, class: "nav-link" %>
+          </li>
+          </ul>
+          <ul class="my-2 my-lg-0">
+            <%= link_to 'Nouvel article', new_article_path, class: "btn btn-primary" %>
+          </ul>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "S'inscrire", new_admin_registration_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Se connecter', new_admin_session_path, class: "nav-link" %>
+          </li>
+        <% end %>
     </div>
   </div>
 </nav>

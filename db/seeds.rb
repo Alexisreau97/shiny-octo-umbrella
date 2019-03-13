@@ -11,8 +11,8 @@
 Article.delete_all
 20.times do |i|
   Article.create!(
-    title: Faker::JapaneseMedia::OnePiece.character,
-    content: Faker::JapaneseMedia::OnePiece.quote
+    title: Faker::JapaneseMedia::OnePiece.unique.character,
+    content: Faker::JapaneseMedia::OnePiece.unique.quote
   )
   p "article #{i} : créé"
 end

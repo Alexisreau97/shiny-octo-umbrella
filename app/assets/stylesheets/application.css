@@ -48,3 +48,7 @@
 .navbar-brand {
 	font-size: 26px !important;
 }
+
+textarea {
+    min-height: 280px !important;
+}

@@ -4,7 +4,7 @@ Lint/UselessAssignment:
 
 # Line is too long.
 Metrics/LineLength:
-  Max: 120
+  Max: 160
 
 # Missing top-level class documentation comment.
 Documentation:
